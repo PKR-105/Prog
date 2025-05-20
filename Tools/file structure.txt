@@ -1,0 +1,13 @@
+project/
+├── main.py
+├── config.py
+├── sensors/
+│   ├── __init__.py        
+│   ├── gas_sensor.py
+│   ├── flame_sensor.py
+│   └── dht11_sensor.py
+├── utils/
+│   ├── __init__.py        
+│   ├── alerts.py
+│   └── server_comms.py
+└── requirements.txt
