@@ -2,7 +2,7 @@ A real-time IoT system sense atmospheric condition, hazardous gases and flames u
 
 Edge Devices: NodeMCU with MQ2/DHT11/flame sensors
 
-ML Backend: Random Forest (98% accuracy) algorithm utilizing Python
+ML Backend: Random Forest (98% accuracy)
 
 Dashboards: PHP web interfaces with MySQL database
 
