@@ -27,11 +27,10 @@ char sd[]="erwq";
 
 char pwdd[]="ertyui";
 
-long rssivaluewifi;
 
 const char* host = "195.111.33.27"; 
 
-char wrky[]="VCI8YTAI2ZL9RLMR";
+char wrky[]="VCGJHVJHBKAIMR";
 
 unsigned long cd=1278647;
 
@@ -89,7 +88,6 @@ void setup() {
 
 void loop() {	
 
-  rssivaluewifi = 0;
 		
   isFlame = digitalRead(isFlamePin);
   
@@ -146,16 +144,14 @@ void loop() {
 
   if(client.connect(host,8000)) {
 
-    rssivaluewifi = WiFi.RSSI();
 
-    url1 = String(numa) + "," + String(t) + "," + String(h) +  "," + lpg + "," + smoke + "," + String(isFlame) + "," + String(rssivaluewifi);
+    url1 = String(numa) + "," + String(t) + "," + String(h) +  "," + lpg + "," + smoke + "," + String(isFlame);
     client.print(url1); 
 	  
 	Serial.println("Send Data");
 	Serial.println(url1);
 	Serial.println(numa);
   	Serial.println("");
-	Serial.println(rssivaluewifi);
 	
 	  
 	
