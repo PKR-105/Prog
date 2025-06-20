@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected Void doInBackground(Void... arg0) {
             HttpHandler sh = new HttpHandler();
-            String url = "https://api.thingspeak.com/channels/2184183/feeds.json?api_key=XFBA3SYW9UAECU80&results=10";
+            String url = "https://api.thingspeak.com/channels/2184183/feeds.json?api_key=XFBA3SY0&results=10";
             String jsonStr = sh.makeServiceCall(url);
 
             Log.e(TAG, "Response from url: " + jsonStr);
